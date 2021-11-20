@@ -1,0 +1,165 @@
+// @import url();
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin displayFlex() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#root {
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #1c1c22;
+    @include displayFlex();
+    flex-direction: column;
+}
+
+.main-container {
+    width: 11rem;
+    height: auto;
+    color: white;
+    flex-shrink: 0;
+    padding: 0.2rem;
+    .inner-container {
+        box-shadow: 0px 0px 40px #000000;
+        width: 100%;
+        font-size: 0.5rem;
+        .top-container {
+            @include displayFlex();
+            font-size: 2rem;
+            height: 3.2rem;
+        }
+        .middel-container {
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            line-height: 0.8rem;
+            .middel-1-container {
+                background-color: white;
+                font-size: 0.5rem;
+                width: 70%;
+                display: flex;
+                color: #1c1c22;
+                span {
+                    @include displayFlex();
+                    width: 50%;
+                    font-size: 1rem;
+                    text-align: center;
+                }
+                .country {
+                    padding: 0.12rem 0;
+                }
+            }
+            .date-time {
+                @include displayFlex();
+                flex-direction: column;
+                background-color: #2f6bf9;
+                width: 30%;
+                padding: 0.12rem 0;
+            }
+        }
+        .last-container {
+            @include displayFlex();
+            font-size: 0.35rem;
+            padding: 0 0 0.5rem 0;
+            flex-wrap: wrap;
+            .last-items {
+                min-width: 25%;
+                @include displayFlex();
+                i {
+                    width: 27%;
+                    color: #2f6bf9;
+                }
+                .second-info {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+.search-container {
+    width: 100%;
+    height: 0.7rem;
+    @include displayFlex();
+    margin-bottom: 1rem;
+    input,
+    button {
+        font-size: 0.35rem;
+        padding: 0.05rem 0.2rem;
+        border: none;
+        line-height: 0.5rem;
+    }
+    input {
+        width: 8rem;
+        border-radius: 5px 0 0 5px;
+    }
+    input:focus {
+        outline: none;
+    }
+    button {
+        color: white;
+        background-color: #2f6bf9;
+        width: 2rem;
+        letter-spacing: 0.01rem;
+        border-radius: 0 5px 5px 0;
+    }
+}
+
+@media (max-width: 650px) {
+    :root {
+        font-size: 50px;
+    }
+    .search-container {
+        padding: 0 0.2rem;
+    }
+    .main-container {
+        width: 100%;
+    }
+    button {
+        width: 20%;
+    }
+    input {
+        width: 80%;
+    }
+    .date-time {
+        font-size: 0.3rem;
+    }
+    .last-items {
+        margin: 0.3rem 0;
+        width: 50%;
+    }
+    .middel-container {
+        line-height: 0.6rem !important;
+        margin-bottom: 0 !important;
+        .middel-1-container {
+            span {
+                font-size: 0.8rem !important    ;
+            }
+            .country {
+                font-size: 0.3rem;
+            }
+        }
+    }
+    .last-container {
+        padding: 0.2rem 0 !important;
+    }
+}

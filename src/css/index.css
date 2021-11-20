@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 60px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #1c1c22;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container {
+  width: 11rem;
+  height: auto;
+  color: white;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding: 0.2rem;
+}
+
+.main-container .inner-container {
+  -webkit-box-shadow: 0px 0px 40px #000000;
+          box-shadow: 0px 0px 40px #000000;
+  width: 100%;
+  font-size: 0.5rem;
+}
+
+.main-container .inner-container .top-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2rem;
+  height: 3.2rem;
+}
+
+.main-container .inner-container .middel-container {
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.5rem;
+  line-height: 0.8rem;
+}
+
+.main-container .inner-container .middel-container .middel-1-container {
+  background-color: white;
+  font-size: 0.5rem;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #1c1c22;
+}
+
+.main-container .inner-container .middel-container .middel-1-container span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50%;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.main-container .inner-container .middel-container .middel-1-container .country {
+  padding: 0.12rem 0;
+}
+
+.main-container .inner-container .middel-container .date-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #2f6bf9;
+  width: 30%;
+  padding: 0.12rem 0;
+}
+
+.main-container .inner-container .last-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.35rem;
+  padding: 0 0 0.5rem 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-container .inner-container .last-container .last-items {
+  min-width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container .inner-container .last-container .last-items i {
+  width: 27%;
+  color: #2f6bf9;
+}
+
+.main-container .inner-container .last-container .last-items .second-info {
+  width: 60%;
+}
+
+.search-container {
+  width: 100%;
+  height: 0.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.search-container input,
+.search-container button {
+  font-size: 0.35rem;
+  padding: 0.05rem 0.2rem;
+  border: none;
+  line-height: 0.5rem;
+}
+
+.search-container input {
+  width: 8rem;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-container input:focus {
+  outline: none;
+}
+
+.search-container button {
+  color: white;
+  background-color: #2f6bf9;
+  width: 2rem;
+  letter-spacing: 0.01rem;
+  border-radius: 0 5px 5px 0;
+}
+
+@media (max-width: 650px) {
+  :root {
+    font-size: 50px;
+  }
+  .search-container {
+    padding: 0 0.2rem;
+  }
+  .main-container {
+    width: 100%;
+  }
+  button {
+    width: 20%;
+  }
+  input {
+    width: 80%;
+  }
+  .date-time {
+    font-size: 0.3rem;
+  }
+  .last-items {
+    margin: 0.3rem 0;
+    width: 50%;
+  }
+  .middel-container {
+    line-height: 0.6rem !important;
+    margin-bottom: 0 !important;
+  }
+  .middel-container .middel-1-container span {
+    font-size: 0.8rem !important;
+  }
+  .middel-container .middel-1-container .country {
+    font-size: 0.3rem;
+  }
+  .last-container {
+    padding: 0.2rem 0 !important;
+  }
+}
